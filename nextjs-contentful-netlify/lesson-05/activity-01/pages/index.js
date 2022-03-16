@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { CanvasClient } from "@uniformdev/canvas";
-import { Composition } from "@uniformdev/canvas-react";
+import { Composition, Slot } from "@uniformdev/canvas-react";
 
 export async function getStaticProps() {
   const client = new CanvasClient({

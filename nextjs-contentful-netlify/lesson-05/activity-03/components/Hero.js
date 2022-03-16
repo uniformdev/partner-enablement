@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Hero({ component }) {
+export const Hero = ({ component }) => {
   return (
     <div style={{ whiteSpace: "pre-wrap" }}>
       {component.parameters.message?.value}
     </div>
   );
-}
+};
