@@ -11,7 +11,7 @@ import { useLivePreviewNextStaticProps } from "../hooks/useLivePreviewNextStatic
 import getConfig from "next/config";
 
 // LESSON 8 - ACTIVITY 10 - START
-import enhance from "../lib/enhancer";
+import doEnhance from "../lib/enhancer";
 // LESSON 8 - ACTIVITY 10 - END
 
 export async function getStaticProps() {
@@ -25,9 +25,9 @@ export async function getStaticProps() {
   });
 
   // LESSON 8 - ACTIVITY 10 - START
-  await enhance(composition);
+  await doEnhance(composition);
   // LESSON 8 - ACTIVITY 10 - END
-  
+
   return {
     props: {
       composition,
@@ -39,12 +39,11 @@ const { publicRuntimeConfig } = getConfig();
 const { uniform } = publicRuntimeConfig;
 
 export default function Home({ composition }) {
-  // LESSON 7 - ACTIVITY 6 - START
   useLivePreviewNextStaticProps({
     compositionId: composition?._id,
     projectId: uniform.projectId,
   });
-  // LESSON 7 - ACTIVITY 6 - END
+
   return (
     <Composition data={composition} resolveRenderer={resolveRenderer}>
       <div className={styles.container}>

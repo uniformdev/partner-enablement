@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function FeaturedEvent({ component }) {
+//Remember to add export to components/index.js
+export const FeaturedEvent = ({ component }) => {
   const { name, description, date } =
     component?.parameters?.event?.value?.fields ?? {};
   return (
@@ -11,4 +12,4 @@ export default function FeaturedEvent({ component }) {
       <div>date: {date}</div>
     </div>
   );
-}
+};
