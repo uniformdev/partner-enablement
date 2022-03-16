@@ -8,7 +8,7 @@ export async function getStaticProps() {
     projectId: process.env.UNIFORM_PROJECT_ID,
   });
   const { composition } = await client.getCompositionBySlug({
-    slug: "/my-landing-page",
+    slug: "/",
   });
   return {
     props: {
