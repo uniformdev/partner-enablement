@@ -1,1 +1,3 @@
 yarn add @uniformdev/canvas-contentful contentful @contentful/rich-text-html-renderer
+
+yarn add @uniformdev/canvas-contentstack contentstack
