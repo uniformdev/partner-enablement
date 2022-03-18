@@ -13,7 +13,7 @@ import { useLivePreviewNextStaticProps } from "../hooks/useLivePreviewNextStatic
 import getConfig from "next/config";
 // LESSON 7 - ACTIVITY 6 - END
 
-export async function getStaticProps() {
+export async function getStaticProps({ preview }) {
   const client = new CanvasClient({
     apiKey: process.env.UNIFORM_API_KEY,
     projectId: process.env.UNIFORM_PROJECT_ID,

@@ -14,7 +14,7 @@ import getConfig from "next/config";
 import enhance from "../lib/enhancer";
 // LESSON 8 - ACTIVITY 10 - END
 
-export async function getStaticProps() {
+export async function getStaticProps({ preview }) {
   const client = new CanvasClient({
     apiKey: process.env.UNIFORM_API_KEY,
     projectId: process.env.UNIFORM_PROJECT_ID,
@@ -27,7 +27,7 @@ export async function getStaticProps() {
   // LESSON 8 - ACTIVITY 10 - START
   await enhance(composition);
   // LESSON 8 - ACTIVITY 10 - END
-  
+
   return {
     props: {
       composition,
