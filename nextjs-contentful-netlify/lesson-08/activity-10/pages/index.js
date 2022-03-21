@@ -14,7 +14,7 @@ import getConfig from "next/config";
 import doEnhance from "../lib/enhancer";
 // LESSON 8 - ACTIVITY 10 - END
 
-export async function getStaticProps() {
+export async function getStaticProps({ preview }) {
   const client = new CanvasClient({
     apiKey: process.env.UNIFORM_API_KEY,
     projectId: process.env.UNIFORM_PROJECT_ID,
