@@ -1,0 +1,48 @@
+{
+  "project": {
+    "pz": {
+      "agg": {
+        "fooqueryIntent": {
+          "inputs": [
+            {
+              "dim": "fooquery"
+            }
+          ]
+        },
+        "fooqueryAudience": {
+          "inputs": [
+            {
+              "dim": "fooquery"
+            },
+            {
+              "dim": "fooqueryIntent"
+            }
+          ]
+        }
+      },
+      "sig": {
+        "fooquery": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": 1
+                },
+                "queryName": "foo"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {}
+  }
+}
