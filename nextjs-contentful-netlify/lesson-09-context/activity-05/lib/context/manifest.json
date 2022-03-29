@@ -1,27 +1,8 @@
 {
   "project": {
     "pz": {
-      "agg": {
-        "fooqueryIntent": {
-          "inputs": [
-            {
-              "dim": "fooquery"
-            }
-          ]
-        },
-        "fooqueryAudience": {
-          "inputs": [
-            {
-              "dim": "fooquery"
-            },
-            {
-              "dim": "fooqueryIntent"
-            }
-          ]
-        }
-      },
       "sig": {
-        "fooquery": {
+        "testIntent": {
           "str": 50,
           "cap": 100,
           "dur": "p",
@@ -34,9 +15,29 @@
                 "match": {
                   "cs": false,
                   "op": "=",
-                  "rhs": 1
+                  "rhs": "test"
                 },
-                "queryName": "foo"
+                "queryName": "utm"
+              }
+            ]
+          }
+        },
+        "quirktest": {
+          "str": 50,
+          "cap": 200,
+          "dur": "p",
+          "crit": {
+            "op": "|",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "myQuirk",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "High"
+                }
               }
             ]
           }
