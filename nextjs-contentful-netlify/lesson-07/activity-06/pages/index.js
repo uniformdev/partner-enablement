@@ -5,7 +5,7 @@ import {
   CANVAS_DRAFT_STATE,
   CANVAS_PUBLISHED_STATE,
 } from "@uniformdev/canvas";
-import { Composition } from "@uniformdev/canvas-react";
+import { Composition, Slot } from "@uniformdev/canvas-react";
 import resolveRenderer from "../lib/resolveRenderer";
 
 // LESSON 7 - ACTIVITY 6- START

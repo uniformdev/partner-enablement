@@ -5,7 +5,7 @@ import {
   CANVAS_DRAFT_STATE,
   CANVAS_PUBLISHED_STATE,
 } from "@uniformdev/canvas";
-import { Composition } from "@uniformdev/canvas-react";
+import { Composition, Slot } from "@uniformdev/canvas-react";
 import resolveRenderer from "../lib/resolveRenderer";
 import { useLivePreviewNextStaticProps } from "../hooks/useLivePreviewNextStaticProps";
 import getConfig from "next/config";
