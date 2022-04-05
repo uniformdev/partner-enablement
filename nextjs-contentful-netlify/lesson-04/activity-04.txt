@@ -1,1 +1,1 @@
-yarn add @uniformdev/canvas @uniformdev/canvas-react @uniformdev/cli
+yarn add @uniformdev/canvas @uniformdev/canvas-react @uniformdev/cli @uniformdev/context @uniformdev/context-next @uniformdev/context-react
