@@ -1,3 +1,3 @@
-export { Header } from "./header";
-export { Footer } from "./footer";
-export { Hero } from "./hero";
+export { Header } from "./Header";
+export { Footer } from "./Footer";
+export { Hero } from "./Hero";
