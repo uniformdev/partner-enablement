@@ -1,0 +1,49 @@
+{
+  "project": {
+    "pz": {
+      "sig": {
+        "testIntent": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "test"
+                },
+                "queryName": "utm"
+              }
+            ]
+          }
+        },
+        "quirktest": {
+          "str": 50,
+          "cap": 200,
+          "dur": "p",
+          "crit": {
+            "op": "|",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "myQuirk",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "High"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {}
+  }
+}
