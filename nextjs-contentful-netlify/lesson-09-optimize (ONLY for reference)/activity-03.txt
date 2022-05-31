@@ -1,0 +1,1 @@
+yarn add @uniformdev/optimize-tracker-browser @uniformdev/optimize-tracker-react

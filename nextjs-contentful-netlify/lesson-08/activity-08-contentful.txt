@@ -1,3 +1,7 @@
 yarn add @uniformdev/canvas-contentful contentful @contentful/rich-text-html-renderer
 
-yarn add @uniformdev/canvas-contentstack contentstack
+npm install @uniformdev/canvas-contentful contentful @contentful/rich-text-html-renderer
+
+CONTENTFUL_SPACE=''
+CONTENTFUL_ENVIRONMENT=''
+CONTENTFUL_ACCESS_TOKEN=''

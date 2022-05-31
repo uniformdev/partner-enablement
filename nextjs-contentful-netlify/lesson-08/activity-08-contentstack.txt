@@ -1,0 +1,7 @@
+yarn add @uniformdev/canvas-contentstack contentstack
+
+npm install @uniformdev/canvas-contentstack contentstack
+
+CONTENTSTACK_API_KEY=''
+CONTENTSTACK_DELIVERY_TOKEN=''
+CONTENTSTACK_ENVIRONMENT=''

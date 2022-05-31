@@ -1,29 +1,30 @@
 {
-    "name": "my-site",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-      "dev": "next dev",
-      "start": "next start",
-      "generate:intents": "uniform optimize manifest download --output ./lib/intentManifest.json --apiKey $UNIFORM_API_KEY",
-      "build": "npm run generate:intents && next build"
-    },
-    "dependencies": {
-      "@contentful/rich-text-html-renderer": "^15.11.1",
-      "@uniformdev/canvas": "^14.1.1",
-      "@uniformdev/canvas-contentful": "^14.1.1",
-      "@uniformdev/canvas-react": "^14.1.1",
-      "@uniformdev/cli": "^14.1.1",
-      "@uniformdev/optimize-tracker-analytics": "^14.1.1",
-      "@uniformdev/optimize-tracker-browser": "^14.1.1",
-      "contentful": "^9.1.10",
-      "next": "12.1.0",
-      "react": "17.0.2",
-      "react-dom": "17.0.2"
-    },
-    "devDependencies": {
-      "eslint": "8.9.0",
-      "eslint-config-next": "12.1.0"
-    }
+  "name": "uniform-enablement",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-s context:manifest dev:next",
+    "dev:next": "next dev -p 3000",
+    "start": "next start",
+    "build": "run-s context:manifest build:next",
+    "build:next": "next build",
+    "context:manifest": "uniform context manifest download --output ./lib/context/manifest.json"
+  },
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^15.11.1",
+    "@uniformdev/canvas": "^16.0.0",
+    "@uniformdev/canvas-contentful": "^16.0.0",
+    "@uniformdev/canvas-contentstack": "^16.0.0",
+    "@uniformdev/canvas-react": "^16.0.0",
+    "@uniformdev/cli": "^16.0.0",
+    "@uniformdev/context": "^16.0.0",
+    "@uniformdev/context-next": "^16.0.0",
+    "@uniformdev/context-react": "^16.0.0",
+    "contentful": "^9.1.14",
+    "contentstack": "^3.15.0",
+    "next": "12.1.0",
+    "npm-run-all": "^4.1.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   }
-  
+}
