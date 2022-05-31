@@ -1,4 +1,5 @@
-yarn add @uniformdev/context @uniformdev/context-react
+yarn add @uniformdev/context @uniformdev/context-next @uniformdev/context-react
 
+npm install @uniformdev/context @uniformdev/context-next @uniformdev/context-react
 
 Create "/lib/context" folder
