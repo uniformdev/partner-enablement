@@ -12,19 +12,23 @@
   },
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^15.11.1",
-    "@uniformdev/canvas": "^16.0.0",
-    "@uniformdev/canvas-contentful": "^16.0.0",
-    "@uniformdev/canvas-contentstack": "^16.0.0",
-    "@uniformdev/canvas-react": "^16.0.0",
-    "@uniformdev/cli": "^16.0.0",
-    "@uniformdev/context": "^16.0.0",
-    "@uniformdev/context-next": "^16.0.0",
-    "@uniformdev/context-react": "^16.0.0",
+    "@uniformdev/canvas": "^16.1.0",
+    "@uniformdev/canvas-contentful": "^16.1.0",
+    "@uniformdev/canvas-contentstack": "^16.1.0",
+    "@uniformdev/canvas-react": "^16.1.0",
+    "@uniformdev/cli": "^16.1.0",
+    "@uniformdev/context": "^16.1.0",
+    "@uniformdev/context-next": "^16.1.0",
+    "@uniformdev/context-react": "^16.1.0",
     "contentful": "^9.1.14",
     "contentstack": "^3.15.0",
     "next": "12.1.0",
     "npm-run-all": "^4.1.5",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6"
   }
 }
