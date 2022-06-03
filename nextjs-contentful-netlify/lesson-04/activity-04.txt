@@ -1,1 +1,3 @@
 yarn add @uniformdev/canvas @uniformdev/canvas-react @uniformdev/cli 
+
+npm install @uniformdev/canvas @uniformdev/canvas-react @uniformdev/cli 
